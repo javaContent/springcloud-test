@@ -1,0 +1,24 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: zull-getway
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8861/eureka/,http://127.0.0.1:8761/eureka/
+
+zuul:
+  routes:
+    client:
+      path: /client-proxy/**
+      serviceId: client-service
+    user:
+      path: /user-proxy/**
+      serviceId: user-service

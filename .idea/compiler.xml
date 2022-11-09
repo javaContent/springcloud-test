@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul-getway" />
+        <module name="security" />
+        <module name="user-api" />
+        <module name="common" />
+        <module name="user-oauth2" />
+        <module name="eureka" />
+        <module name="client" />
+        <module name="eureka2" />
+        <module name="client1" />
+        <module name="security-oauth2" />
+        <module name="users" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka (1)" target="8" />
+      <module name="test-client" target="8" />
+      <module name="user" target="8" />
+      <module name="zuul" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="-parameters" />
+      <module name="client1" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eureka (1)" options="-parameters" />
+      <module name="eureka2" options="-parameters" />
+      <module name="security" options="-parameters" />
+      <module name="security-oauth2" options="-parameters" />
+      <module name="test-client" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="user-api" options="-parameters" />
+      <module name="user-oauth2" options="-parameters" />
+      <module name="users" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+      <module name="zuul-getway" options="-parameters" />
+    </option>
+  </component>
+</project>
